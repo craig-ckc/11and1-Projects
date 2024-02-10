@@ -38,7 +38,7 @@ let tlMain = gsap
       scrub: true
     }
   })
-  .to(".clip-wrap", { xPercent: 300, ease: "none" })
+  .to(".clip-wrap", { xPercent: 400, ease: "none" })
   .fromTo(
     ".trust_section",
     {
