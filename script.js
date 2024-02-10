@@ -38,7 +38,7 @@ let tlMain = gsap
       scrub: true
     }
   })
-  .to(".clip-wrap", { xPercent: 400, ease: "none" })
+  .to(".clip-wrap", { xPercent: 300, ease: "none" })
   .fromTo(
     ".trust_section",
     {
@@ -47,3 +47,5 @@ let tlMain = gsap
     { clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", ease: "none" },
     0
   );
+
+console.log("Working")
