@@ -139,7 +139,9 @@ let tlMain = gsap
     0
   );
 
+function familyClipPathAnimation() {
   const elem = document.getElementById('hover-box');
+	
   // Attach mousemove event 
   elem.addEventListener('mousemove', function(event){
 
@@ -149,18 +151,20 @@ let tlMain = gsap
      // Get the bounding client
      const rect = target.getBoundingClientRect();
 
-     // Get X & Y coordinates 
+     // Get X & Y coordinates in percentage
      let xPos = ((event.clientX - rect.left) / rect.width) * 100;
      let yPos = ((event.clientY - rect.top) / rect.height) * 100;
-     	
+	
+	// percentage  
      var pos = `${xPos}% ${yPos}%`;
-
-     // Print the XY-coordinates
-     // console.log(pos); 
      
-     // foreground pattern
+     // foreground pattern element
      var foreground = document.getElementById("clip-foreground")
      
-     // change the clip path position
+     // Change the clip-path position
      foreground.setAttribute("style", `clip-path: circle(10rem at ${pos});`)
   });
+}
+
+
+familyClipPathAnimation()
