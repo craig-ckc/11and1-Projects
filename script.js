@@ -1,5 +1,3 @@
-
-<script>
 // Optional - Set sticky section heights based on inner content width
 // Makes scroll timing feel more natural
 function setTrackHeights() {
@@ -141,9 +139,6 @@ let tlMain = gsap
     0
   );
 
-</script>
-
-<script>
   const elem = document.getElementById('hover-box');
   // Attach mousemove event 
   elem.addEventListener('mousemove', function(event){
@@ -169,4 +164,3 @@ let tlMain = gsap
      // change the clip path position
      foreground.setAttribute("style", `clip-path: circle(10rem at ${pos});`)
   });
-</script>
