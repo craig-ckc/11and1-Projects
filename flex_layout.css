@@ -1,0 +1,54 @@
+[class*=flx] {
+    display: flex;
+    flex-direction: column
+}
+
+[class*=fdv] {
+    flex-direction: column
+}
+
+/* portrait */
+[class*=fpr] {
+    flex-direction: row
+}
+
+/* desktop */
+@media screen and (min-width:992px) {
+    [class*=fdr] {
+        flex-direction: row
+    }
+}
+
+/* tablet */
+@media screen and (min-width:768px) {
+    [class*=ftr] {
+        flex-direction: row
+    }
+}
+
+/* landscape */
+@media screen and (min-width:480px) {
+    [class*=flr] {
+        flex-direction: row
+    }
+}
+
+[class*="z1"] {
+    z-index: 1;
+}
+
+[class*="z2"] {
+    z-index: 2;
+}
+
+[class*="z3"] {
+    z-index: 3;
+}
+
+[class*="z4"] {
+    z-index: 4;
+}
+
+[class*="z5"] {
+    z-index: 5;
+}
